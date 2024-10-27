@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+    scroll-behavior: smooth;
+}
+section {
+    scroll-margin-top: 98px;
+}
+.header::before {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 4px;
+    background-color: pink;
+    border-radius: 25px;
+    bottom: -8px;
+    left: 0;
+}
+.header::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 4px;
+    background-color: rgba(255, 167, 181, 0.801);
+    border-radius: 25px;
+    bottom: -16px;
+    left: 0;
+}
+.content {
+    margin-top: 24px;
+}
