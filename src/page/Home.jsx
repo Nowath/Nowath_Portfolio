@@ -1,8 +1,14 @@
 import React from "react";
+//import image
 import Profile from "../assets/Profile.jpg";
 import Background from "../assets/AnasAbdin.gif";
+import Anubarn from "../assets/anubarnsurin-Logo.jpg";
+import SWK from "../assets/SWK-Logo.svg";
+//import component
 import Middlebar from "../components/middlebar";
+//import extention
 import { motion } from "framer-motion";
+//import Icon
 import {
     FaHtml5,
     FaCss3Alt,
@@ -17,7 +23,9 @@ import {
     RiTailwindCssFill,
     RiSupabaseFill,
 } from "react-icons/ri";
-import { SiArduino } from "react-icons/si";
+import { SiArduino, SiVscodium } from "react-icons/si";
+import { VscVscode } from "react-icons/vsc";
+//
 
 function Home() {
     return (
@@ -48,7 +56,7 @@ function Home() {
                     </div>
                 </div>
                 <Middlebar />
-                <div className="text-white w-full flex flex-col items-center justify-center z-10">
+                <div className="text-white w-full flex flex-col gap-y-5 items-center justify-center z-10">
                     <section id="AboutMe" class=" h-auto w-[94%]">
                         <div className=" flex justify-start text-4xl">
                             <h1 className="header relative">About Me</h1>
@@ -198,6 +206,13 @@ function Home() {
                                                     </li>
                                                     <li className="flex items-center gap-1">
                                                         <SiArduino /> Arduino
+                                                        IDE
+                                                    </li>
+                                                    <li className="flex items-center gap-1">
+                                                        <VscVscode /> Vscode
+                                                    </li>
+                                                    <li className="flex items-center gap-1">
+                                                        <SiVscodium /> Vscodium
                                                     </li>
                                                 </div>
                                             </ul>
@@ -208,9 +223,50 @@ function Home() {
                         </div>
                     </section>
 
-                    <section id="Aducation" class="h-screen w-[94%]">
+                    <section id="Aducation" class="min-h-screen w-[94%]">
                         <div className="flex justify-start text-4xl">
                             <h1 className="header relative">Aducation</h1>
+                        </div>
+                        <div className="content flex w-full gap-5 md:flex-row flex-col">
+                            <a
+                                href="https://www.anubarnsurin.ac.th/"
+                                target="_blank"
+                                className="flex justify-center items-center flex-col flex-1 py-4 rounded-xl transition-all hover:bg-[rgba(255,255,255,0.27)] hover:backdrop-blur-lg"
+                            >
+                                <img
+                                    className=" w-64 rounded-full"
+                                    src={Anubarn}
+                                    alt=""
+                                />
+                                <h1 className="text-2xl">Anubarnsurin</h1>
+                                <p className="text-lg">Primary school</p>
+                            </a>
+                            <a
+                                href="https://sura.ac.th/"
+                                target="_blank"
+                                className="flex justify-center items-center flex-col flex-1 py-4 rounded-xl transition-all hover:bg-[rgba(255,255,255,0.27)] hover:backdrop-blur-lg"
+                            >
+                                <img
+                                    className=" w-64 bg-white rounded-full"
+                                    src={SWK}
+                                    alt=""
+                                />
+                                <h1 className="text-2xl">Surawittayakarn</h1>
+                                <p className="text-lg">Middle school</p>
+                            </a>
+                            <a
+                                href="https://sura.ac.th/"
+                                target="_blank"
+                                className="flex justify-center items-center flex-col flex-1 py-4 rounded-xl transition-all hover:bg-[rgba(255,255,255,0.27)] hover:backdrop-blur-lg"
+                            >
+                                <img
+                                    className=" w-64 bg-white rounded-full"
+                                    src={SWK}
+                                    alt=""
+                                />
+                                <h1 className="text-2xl">Surawittayakarn</h1>
+                                <p className="text-lg">High school</p>
+                            </a>
                         </div>
                     </section>
 
