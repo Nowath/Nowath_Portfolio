@@ -57,7 +57,7 @@ function Home() {
                 </div>
                 <Middlebar />
                 <div className="text-white w-full flex flex-col gap-y-5 items-center justify-center z-10">
-                    <section id="AboutMe" class=" h-auto w-[94%]">
+                    <section id="AboutMe" class=" w-[94%]">
                         <div className=" flex justify-start text-4xl">
                             <h1 className="header relative">About Me</h1>
                         </div>
@@ -223,7 +223,7 @@ function Home() {
                         </div>
                     </section>
 
-                    <section id="Aducation" class="min-h-screen w-[94%]">
+                    <section id="Aducation" class="w-[94%]">
                         <div className="flex justify-start text-4xl">
                             <h1 className="header relative">Aducation</h1>
                         </div>
@@ -234,7 +234,7 @@ function Home() {
                                 className="flex justify-center items-center flex-col flex-1 py-4 rounded-xl transition-all hover:bg-[rgba(255,255,255,0.27)] hover:backdrop-blur-lg"
                             >
                                 <img
-                                    className=" w-64 rounded-full"
+                                    className=" w-48 md:w-64 rounded-full"
                                     src={Anubarn}
                                     alt=""
                                 />
@@ -247,7 +247,7 @@ function Home() {
                                 className="flex justify-center items-center flex-col flex-1 py-4 rounded-xl transition-all hover:bg-[rgba(255,255,255,0.27)] hover:backdrop-blur-lg"
                             >
                                 <img
-                                    className=" w-64 bg-white rounded-full"
+                                    className=" w-48 md:w-64 bg-white rounded-full"
                                     src={SWK}
                                     alt=""
                                 />
@@ -260,7 +260,7 @@ function Home() {
                                 className="flex justify-center items-center flex-col flex-1 py-4 rounded-xl transition-all hover:bg-[rgba(255,255,255,0.27)] hover:backdrop-blur-lg"
                             >
                                 <img
-                                    className=" w-64 bg-white rounded-full"
+                                    className=" w-48 md:w-64 bg-white rounded-full"
                                     src={SWK}
                                     alt=""
                                 />
