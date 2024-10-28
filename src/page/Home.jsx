@@ -23,7 +23,7 @@ import {
     RiTailwindCssFill,
     RiSupabaseFill,
 } from "react-icons/ri";
-import { SiArduino, SiVscodium } from "react-icons/si";
+import { SiArduino, SiVscodium, SiPostman } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 //
 
@@ -197,23 +197,36 @@ function Home() {
                                                     <h1 className="text-2xl underline">
                                                         Application
                                                     </h1>
-                                                    <li className="flex items-center gap-1">
-                                                        <FaGithub /> Github
-                                                    </li>
-                                                    <li className="flex items-center gap-1">
-                                                        <RiSupabaseFill />{" "}
-                                                        Supabase
-                                                    </li>
-                                                    <li className="flex items-center gap-1">
-                                                        <SiArduino /> Arduino
-                                                        IDE
-                                                    </li>
-                                                    <li className="flex items-center gap-1">
-                                                        <VscVscode /> Vscode
-                                                    </li>
-                                                    <li className="flex items-center gap-1">
-                                                        <SiVscodium /> Vscodium
-                                                    </li>
+                                                    <div className="flex-row md:flex-col flex gap-3">
+                                                        <div className="gap-y-3 flex flex-col">
+                                                            <li className="flex items-center gap-1">
+                                                                <FaGithub />{" "}
+                                                                Github
+                                                            </li>
+                                                            <li className="flex items-center gap-1">
+                                                                <RiSupabaseFill />{" "}
+                                                                Supabase
+                                                            </li>
+                                                            <li className="flex items-center gap-1">
+                                                                <VscVscode />{" "}
+                                                                Vscode
+                                                            </li>
+                                                            <li className="flex items-center gap-1">
+                                                                <SiVscodium />{" "}
+                                                                Vscodium
+                                                            </li>
+                                                        </div>
+                                                        <div className="flex gap-y-3 flex-col">
+                                                            <li className="flex items-center gap-1">
+                                                                <SiPostman />{" "}
+                                                                Postman
+                                                            </li>
+                                                            <li className="flex items-center gap-1">
+                                                                <SiArduino />{" "}
+                                                                Arduino IDE
+                                                            </li>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </ul>
                                         </div>
@@ -231,7 +244,7 @@ function Home() {
                             <a
                                 href="https://www.anubarnsurin.ac.th/"
                                 target="_blank"
-                                className="flex justify-center items-center flex-col flex-1 py-4 rounded-xl transition-all hover:bg-[rgba(255,255,255,0.27)] hover:backdrop-blur-lg"
+                                className="flex justify-center items-center flex-col flex-1 py-4 rounded-xl transition-all hover:shadow-pink-300 hover:shadow-2xl hover:bg-[rgba(255,255,255,0.27)] hover:backdrop-blur-lg"
                             >
                                 <img
                                     className=" w-48 md:w-64 rounded-full"
@@ -244,7 +257,7 @@ function Home() {
                             <a
                                 href="https://sura.ac.th/"
                                 target="_blank"
-                                className="flex justify-center items-center flex-col flex-1 py-4 rounded-xl transition-all hover:bg-[rgba(255,255,255,0.27)] hover:backdrop-blur-lg"
+                                className="flex justify-center items-center flex-col flex-1 py-4 rounded-xl transition-all hover:shadow-green-700 hover:shadow-2xl hover:bg-[rgba(255,255,255,0.27)] hover:backdrop-blur-lg"
                             >
                                 <img
                                     className=" w-48 md:w-64 bg-white rounded-full"
@@ -257,7 +270,7 @@ function Home() {
                             <a
                                 href="https://sura.ac.th/"
                                 target="_blank"
-                                className="flex justify-center items-center flex-col flex-1 py-4 rounded-xl transition-all hover:bg-[rgba(255,255,255,0.27)] hover:backdrop-blur-lg"
+                                className="flex justify-center items-center flex-col flex-1 py-4 rounded-xl transition-all hover:shadow-yellow-300 hover:shadow-2xl hover:bg-[rgba(255,255,255,0.27)] hover:backdrop-blur-lg"
                             >
                                 <img
                                     className=" w-48 md:w-64 bg-white rounded-full"
