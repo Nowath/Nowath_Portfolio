@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 //import image
 import Profile from "../assets/Profile.jpg";
 import Background from "../assets/AnasAbdin.gif";
@@ -16,6 +16,9 @@ import {
     FaReact,
     FaPython,
     FaGithub,
+    FaFacebook,
+    FaInstagram,
+    FaYoutube,
 } from "react-icons/fa";
 import { BiLogoTypescript } from "react-icons/bi";
 import {
@@ -25,9 +28,36 @@ import {
 } from "react-icons/ri";
 import { SiArduino, SiVscodium, SiPostman } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
+import { spring } from "framer-motion";
 //
 
 function Home() {
+    const [contact, setcontact] = useState([
+        {
+            title: "Facebook",
+            icon: <FaFacebook size={50} />,
+            link: "https://www.facebook.com/nano.ugridsiri.5",
+            color: "text-[#1974ec]",
+        },
+        {
+            title: "Instagram",
+            icon: <FaInstagram size={50} />,
+            link: "https://www.instagram.com/nanougridsiri/",
+            color: "text-[#912eb9]",
+        },
+        {
+            title: "Youtube",
+            icon: <FaYoutube size={50} />,
+            link: "https://www.youtube.com/@Nowath2404",
+            color: "text-[#ed0000]",
+        },
+        {
+            title: "Github",
+            icon: <FaGithub size={50} />,
+            link: "https://github.com/Nowath",
+            color: "text-black",
+        },
+    ]);
     return (
         <div className="w-screen h-screen relative">
             <div className="absolute w-full h-full -z-10">
@@ -176,6 +206,10 @@ function Home() {
                                                         <BiLogoTypescript />
                                                         TypeScript
                                                     </li>
+                                                    <li className="flex items-center gap-1">
+                                                        <FaPython />
+                                                        Python
+                                                    </li>
                                                 </div>
                                                 <div className="flex flex-col gap-y-3 ">
                                                     <h1 className="text-2xl underline">
@@ -292,6 +326,38 @@ function Home() {
                     <section id="Contact" class="h-screen w-[94%]">
                         <div className="flex justify-start text-4xl">
                             <h1 className="header relative">Contact</h1>
+                        </div>
+                        <div className="mt-10 flex justify-around w-full">
+                            {contact.map((items) => (
+                                <motion.a
+                                    initial={{ y: 40, opacity: 0 }}
+                                    whileInView={{ y: 0, opacity: 1 }}
+                                    whileHover={{ scale: 1.1 }}
+                                    whileTap={{ scale: 0.9 }}
+                                    transition={{
+                                        type: "spring",
+                                        stiffness: 300,
+                                        damping: 20,
+                                        duration: 0.3,
+                                    }}
+                                    href={items.link}
+                                    target="_blank"
+                                    className={`bg-[rgba(255,255,255,0.27)] group transition-colors backdrop-blur-lg gap-2 rounded-xl px-24 py-10 flex flex-col justify-center items-center`}
+                                >
+                                    <div
+                                        className={`group-hover:${items.color}`}
+                                    >
+                                        {items.icon}
+                                    </div>
+                                    <h1 className="">
+                                        <div
+                                            className={`group-hover:${items.color} group-hover:[text-shadow:_2px_2px_5px_black] transition-colors text-xl`}
+                                        >
+                                            {items.title}
+                                        </div>
+                                    </h1>
+                                </motion.a>
+                            ))}
                         </div>
                     </section>
                 </div>
