@@ -327,7 +327,7 @@ function Home() {
                         <div className="flex justify-start text-4xl">
                             <h1 className="header relative">Contact</h1>
                         </div>
-                        <div className="mt-10 flex justify-around w-full">
+                        <div className="mt-10 flex flex-wrap gap-y-10 justify-around w-full">
                             {contact.map((items) => (
                                 <motion.a
                                     initial={{ y: 40, opacity: 0 }}
@@ -342,7 +342,7 @@ function Home() {
                                     }}
                                     href={items.link}
                                     target="_blank"
-                                    className={`bg-[rgba(255,255,255,0.27)] group transition-colors backdrop-blur-lg gap-2 rounded-xl px-24 py-10 flex flex-col justify-center items-center`}
+                                    className={`bg-[rgba(255,255,255,0.27)] group transition-colors backdrop-blur-lg gap-2 rounded-xl w-72 py-10 flex flex-col justify-center items-center`}
                                 >
                                     <div
                                         className={`group-hover:${items.color}`}
