@@ -323,7 +323,7 @@ function Home() {
                         </div>
                     </section>
 
-                    <section id="Contact" class="h-screen w-[94%]">
+                    <section id="Contact" class="w-[94%] h-auto py-5">
                         <div className="flex justify-start text-4xl">
                             <h1 className="header relative">Contact</h1>
                         </div>
