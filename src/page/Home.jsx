@@ -397,6 +397,15 @@ function Home() {
                                 ))}
                             </div>
                         </div>
+                        <div className="flex justify-center gap-2 mt-5 mb-5">
+                            <p>See More at</p>
+                            <a
+                                className="text-red-500"
+                                href="https://github.com/Nowath"
+                            >
+                                GITHUB
+                            </a>
+                        </div>
                     </section>
 
                     <section id="Contact" class="w-[94%] h-auto py-5">
