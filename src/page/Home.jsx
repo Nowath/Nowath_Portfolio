@@ -295,7 +295,7 @@ function Home() {
                         <div className="flex justify-start text-4xl">
                             <h1 className="header relative">Aducation</h1>
                         </div>
-                        <div className="content flex w-full gap-5 md:flex-row flex-col">
+                        <div className="content flex w-full gap-5 flex-wrap flex-col sm:flex-row">
                             <a
                                 href="https://www.anubarnsurin.ac.th/"
                                 target="_blank"
@@ -343,7 +343,7 @@ function Home() {
                             <h1 className="header relative">Project</h1>
                         </div>
                         <div className=" mt-10">
-                            <div className="cards flex justify-around gap-3 flex-wrap">
+                            <div className="cards flex justify-around gap-y-10 flex-wrap">
                                 {cardData.map((items) => (
                                     <motion.div
                                         whileHover={{ scale: 1.1 }}
