@@ -7,25 +7,25 @@ const contact = [
         title: "Facebook",
         icon: <FaFacebook size={50} />,
         link: "https://www.facebook.com/nano.ugridsiri.5",
-        color: "rgb(25_116_236)",
+        color: "[rgb(25_116_236)]",
     },
     {
         title: "Instagram",
         icon: <FaInstagram size={50} />,
         link: "https://www.instagram.com/nanougridsiri/",
-        color: "rgb(145_46_185)",
+        color: "[rgb(145_46_185)]",
     },
     {
         title: "Youtube",
         icon: <FaYoutube size={50} />,
         link: "https://www.youtube.com/@Nowath2404",
-        color: "rgb(255_0_0)",
+        color: "[rgb(255_0_0)]",
     },
     {
         title: "Github",
         icon: <FaGithub size={50} />,
         link: "https://github.com/Nowath",
-        color: "rgb(0_0_0)",
+        color: "black",
     },
 ];
 
@@ -48,12 +48,12 @@ function SocialContact() {
                     target="_blank"
                     className={`bg-[rgba(255,255,255,0.27)] group transition-colors backdrop-blur-lg gap-2 rounded-xl w-72 py-10 flex flex-col justify-center items-center`}
                 >
-                    <div className={`group-hover:text-[${items.color}]`}>
+                    <div className={`group-hover:text-${items.color}`}>
                         {items.icon}
                     </div>
                     <h1 className="">
                         <div
-                            className={`group-hover:text-[${items.color}] group-hover:[text-shadow:_2px_2px_5px_black] transition-colors text-xl`}
+                            className={`group-hover:text-${items.color} group-hover:[text-shadow:_2px_2px_5px_black] transition-colors text-xl`}
                         >
                             {items.title}
                         </div>
