@@ -22,6 +22,7 @@ import {
     FaFacebook,
     FaInstagram,
     FaYoutube,
+    FaArrowRight,
 } from "react-icons/fa";
 import { BiLogoTypescript } from "react-icons/bi";
 import {
@@ -296,7 +297,9 @@ function Home() {
                             <h1 className="header relative">Aducation</h1>
                         </div>
                         <div className="content flex w-full gap-5 flex-wrap flex-col sm:flex-row">
-                            <a
+                            <motion.a
+                                initial={{ y: 40, opacity: 0 }}
+                                whileInView={{ y: 0, opacity: 1 }}
                                 href="https://www.anubarnsurin.ac.th/"
                                 target="_blank"
                                 className="flex justify-center items-center flex-col flex-1 py-4 rounded-xl transition-all hover:shadow-pink-300 hover:shadow-2xl hover:bg-[rgba(255,255,255,0.27)] hover:backdrop-blur-lg"
@@ -308,8 +311,10 @@ function Home() {
                                 />
                                 <h1 className="text-2xl">Anubarnsurin</h1>
                                 <p className="text-lg">Primary school</p>
-                            </a>
-                            <a
+                            </motion.a>
+                            <motion.a
+                                initial={{ y: 40, opacity: 0 }}
+                                whileInView={{ y: 0, opacity: 1 }}
                                 href="https://sura.ac.th/"
                                 target="_blank"
                                 className="flex justify-center items-center flex-col flex-1 py-4 rounded-xl transition-all hover:shadow-green-700 hover:shadow-2xl hover:bg-[rgba(255,255,255,0.27)] hover:backdrop-blur-lg"
@@ -321,8 +326,10 @@ function Home() {
                                 />
                                 <h1 className="text-2xl">Surawittayakarn</h1>
                                 <p className="text-lg">Middle school</p>
-                            </a>
-                            <a
+                            </motion.a>
+                            <motion.a
+                                initial={{ y: 40, opacity: 0 }}
+                                whileInView={{ y: 0, opacity: 1 }}
                                 href="https://sura.ac.th/"
                                 target="_blank"
                                 className="flex justify-center items-center flex-col flex-1 py-4 rounded-xl transition-all hover:shadow-yellow-300 hover:shadow-2xl hover:bg-[rgba(255,255,255,0.27)] hover:backdrop-blur-lg"
@@ -334,7 +341,7 @@ function Home() {
                                 />
                                 <h1 className="text-2xl">Surawittayakarn</h1>
                                 <p className="text-lg">High school</p>
-                            </a>
+                            </motion.a>
                         </div>
                     </section>
 
@@ -346,6 +353,8 @@ function Home() {
                             <div className="cards flex justify-around gap-y-10 flex-wrap">
                                 {cardData.map((items) => (
                                     <motion.div
+                                        initial={{ y: 40, opacity: 0 }}
+                                        whileInView={{ y: 0, opacity: 1 }}
                                         whileHover={{ scale: 1.1 }}
                                         className="flex flex-col justify-between card w-80 h-96 bg-[#ffffff60] overflow-hidden backdrop-blur-lg rounded-xl"
                                     >
@@ -374,11 +383,14 @@ function Home() {
                                                     damping: 20,
                                                     duration: 0.3,
                                                 }}
-                                                className="bg-pink-400 w-36 flex justify-center items-center rounded-lg h-10"
+                                                className="bg-pink-400 group relative w-36 flex justify-center items-center rounded-lg h-10"
                                                 href={items.link}
                                                 target="_blank"
                                             >
-                                                DEMO
+                                                LOOK
+                                                <div className=" absolute transition-all group-hover:translate-x-9 group-hover:visible invisible ">
+                                                    <FaArrowRight />
+                                                </div>
                                             </motion.a>
                                         </div>
                                     </motion.div>
