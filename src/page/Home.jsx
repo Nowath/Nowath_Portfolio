@@ -4,6 +4,9 @@ import Profile from "../assets/Profile.jpg";
 import Background from "../assets/AnasAbdin.gif";
 import Anubarn from "../assets/anubarnsurin-Logo.jpg";
 import SWK from "../assets/SWK-Logo.svg";
+import QrImage from "../assets/card/Qrcode.png";
+import Bio from "../assets/card/Nano_card.png";
+import TrashBack from "../assets/card/trashback.png";
 //import component
 import Middlebar from "../components/middlebar";
 //import extention
@@ -28,8 +31,6 @@ import {
 } from "react-icons/ri";
 import { SiArduino, SiVscodium, SiPostman } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
-import { spring } from "framer-motion";
-//
 
 function Home() {
     const [contact, setcontact] = useState([
@@ -37,25 +38,45 @@ function Home() {
             title: "Facebook",
             icon: <FaFacebook size={50} />,
             link: "https://www.facebook.com/nano.ugridsiri.5",
-            color: "text-[#1974ec]",
+            color: "[#1974ec]",
         },
         {
             title: "Instagram",
             icon: <FaInstagram size={50} />,
             link: "https://www.instagram.com/nanougridsiri/",
-            color: "text-[#912eb9]",
+            color: "[#912eb9]",
         },
         {
             title: "Youtube",
             icon: <FaYoutube size={50} />,
             link: "https://www.youtube.com/@Nowath2404",
-            color: "text-[#ed0000]",
+            color: "[#ed0000]",
         },
         {
             title: "Github",
             icon: <FaGithub size={50} />,
             link: "https://github.com/Nowath",
-            color: "text-black",
+            color: "black",
+        },
+    ]);
+    const [cardData, setCardData] = useState([
+        {
+            title: "Qrcode_Gen",
+            prop: "Lorem ipsum dolor sit amet consectetur adipisicing elit Pariatur odio tempore quis perspiciatis quibusdam modi impedit voluptate sapiente corrupti hic",
+            image: QrImage,
+            link: "https://qrcode-generater-nowath.vercel.app/",
+        },
+        {
+            title: "TrashBack",
+            prop: "Lorem ipsum dolor sit amet consectetur adipisicing elit Pariatur odio tempore quis perspiciatis quibusdam modi impedit voluptate sapiente corrupti hic",
+            image: TrashBack,
+            link: "https://trashback-mobile.vercel.app/",
+        },
+        {
+            title: "Old Bio",
+            prop: "Lorem ipsum dolor sit amet consectetur adipisicing elit Pariatur odio tempore quis perspiciatis quibusdam modi impedit voluptate sapiente corrupti hic",
+            image: Bio,
+            link: "https://nowath.github.io/",
         },
     ]);
     return (
@@ -317,9 +338,52 @@ function Home() {
                         </div>
                     </section>
 
-                    <section id="Project" class="h-screen w-[94%]">
+                    <section id="Project" class="h-auto w-[94%]">
                         <div className="flex justify-start text-4xl">
                             <h1 className="header relative">Project</h1>
+                        </div>
+                        <div className=" mt-10">
+                            <div className="cards flex justify-around gap-3 flex-wrap">
+                                {cardData.map((items) => (
+                                    <motion.div
+                                        whileHover={{ scale: 1.1 }}
+                                        className="flex flex-col justify-between card w-80 h-96 bg-[#ffffff60] overflow-hidden backdrop-blur-lg rounded-xl"
+                                    >
+                                        <div className=" h-[80%]">
+                                            <img
+                                                className="h-2/5 w-full object-cover mb-3"
+                                                src={items.image}
+                                                alt=""
+                                            />
+                                            <div className="px-2">
+                                                <h1 className="text-4xl mb-3">
+                                                    {items.title}
+                                                </h1>
+                                                <p className=" h-32 overflow-auto">
+                                                    {items.prop}
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div className=" h-[20%] flex justify-center items-center">
+                                            <motion.a
+                                                whileHover={{ scale: 1.1 }}
+                                                whileTap={{ scale: 0.9 }}
+                                                transition={{
+                                                    type: "spring",
+                                                    stiffness: 300,
+                                                    damping: 20,
+                                                    duration: 0.3,
+                                                }}
+                                                className="bg-pink-400 w-36 flex justify-center items-center rounded-lg h-10"
+                                                href={items.link}
+                                                target="_blank"
+                                            >
+                                                DEMO
+                                            </motion.a>
+                                        </div>
+                                    </motion.div>
+                                ))}
+                            </div>
                         </div>
                     </section>
 
@@ -345,13 +409,13 @@ function Home() {
                                     className={`bg-[rgba(255,255,255,0.27)] group transition-colors backdrop-blur-lg gap-2 rounded-xl w-72 py-10 flex flex-col justify-center items-center`}
                                 >
                                     <div
-                                        className={`group-hover:${items.color}`}
+                                        className={`group-hover:text-${items.color}`}
                                     >
                                         {items.icon}
                                     </div>
                                     <h1 className="">
                                         <div
-                                            className={`group-hover:${items.color} group-hover:[text-shadow:_2px_2px_5px_black] transition-colors text-xl`}
+                                            className={`group-hover:text-${items.color} group-hover:[text-shadow:_2px_2px_5px_black] transition-colors text-xl`}
                                         >
                                             {items.title}
                                         </div>
