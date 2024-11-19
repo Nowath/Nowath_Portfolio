@@ -31,8 +31,6 @@ import { SiArduino, SiVscodium, SiPostman } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 // import component
 import SocialContact from "../components/SocialContact";
-// import data
-import CardData from "./homedata.json";
 
 function Home() {
     const [cardData, setCardData] = useState([
@@ -321,7 +319,7 @@ function Home() {
                         </div>
                         <div className=" mt-10">
                             <div className="cards flex justify-around gap-y-10 flex-wrap">
-                                {CardData.map((items) => (
+                                {cardData.map((items) => (
                                     <motion.div
                                         initial={{ y: 40, opacity: 0 }}
                                         whileInView={{ y: 0, opacity: 1 }}
