@@ -31,6 +31,8 @@ import { SiArduino, SiVscodium, SiPostman } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 // import component
 import SocialContact from "../components/SocialContact";
+// import data
+import CardData from "./homedata.json";
 
 function Home() {
     const [cardData, setCardData] = useState([
@@ -91,40 +93,35 @@ function Home() {
                                 whileHover={{ scale: 1.01 }}
                                 className="bg-[rgba(255,255,255,0.27)] h-56 overflow-auto backdrop-blur-lg text-white transition-[background,color] hover:bg-[rgba(255,255,255,0.57)] hover:text-black  w-full rounded-xl p-4"
                             >
-                                Lorem ipsum dolor, sit amet consectetur
-                                adipisicing elit. In sequi repudiandae eaque
-                                voluptas magnam aut earum amet necessitatibus
-                                illo suscipit asperiores voluptate quibusdam
-                                molestias distinctio, aperiam accusantium sint
-                                inventore ab et officiis alias perspiciatis
-                                delectus ullam. Facilis nobis minima quasi autem
-                                amet! Doloremque deleniti quibusdam placeat
-                                magni veniam explicabo repudiandae? Accusantium
-                                nemo labore aspernatur minima, laudantium quis
-                                debitis hic a inventore amet earum nesciunt
-                                mollitia incidunt quas cum sequi facilis saepe,
-                                eligendi modi fuga eum. Rerum nam, natus porro
-                                inventore recusandae quos deleniti ab blanditiis
-                                eaque quis cumque tempore fuga, tempora sed.
-                                Commodi hic sequi provident dolores ut maxime
-                                obcaecati rem aliquam ad praesentium fugiat
-                                dolorem, nesciunt quia distinctio cumque earum
-                                autem eum, nostrum est reiciendis quas fugit!
-                                Aliquid ipsum hic voluptatibus odit aspernatur
-                                reprehenderit ipsa ullam magni vel quidem
-                                repellendus eum assumenda facere sequi quasi
-                                facilis iusto aut repellat, quibusdam
-                                temporibus. Doloremque esse explicabo maiores,
-                                laudantium animi debitis earum rerum cumque
-                                quaerat beatae enim, provident omnis? Iure
-                                incidunt repellat eligendi cupiditate. Fuga,
-                                nisi officia tempore ratione, tempora dolorem
-                                consequatur odio temporibus ea laborum non
-                                repellendus similique recusandae facere maxime
-                                assumenda voluptatem mollitia reiciendis
-                                accusamus aut voluptatibus ipsum necessitatibus
-                                saepe! Illo delectus neque quis obcaecati, nam
-                                quisquam non totam labore.
+                                ผมมีความสนใจ
+                                ใฝ่เรียนรู้เกี่ยวกับการเรียนวิชาหุ่นยนต์และเทคโนโลยีมาตั้งแต่เริ่มเรียนชั้นมัธยมศึกษาตอนต้นรวมทั้งได้รับการสนับสนุนทั้งเวลาและงบประมาณจากครอบครัว
+                                ประกอบกับได้รับความรู้จากครูผู้สอน
+                                โดยเริ่มต้นการจากเรียนเขียนโปรแกรมภาษา C
+                                นั่นเป็นจุดเปลี่ยนสำคัญที่ทำให้ผมได้สัมผัสกับโลกของการเขียนโค้ด
+                                การฝึกอ่านและแก้ไขข้อผิดพลาด {"(Error text) "}
+                                จากเรื่องยากกลายเป็นเรื่องสนุกและตื่นเต้นกับการแก้ปัญหา
+                                ซึ่งช่วยให้ผมตระหนักถึงความสำคัญของเทคโนโลยี
+                                ช่วงการระบาดของ COVID-19
+                                โรงเรียนไม่สามารถเปิดทำการเรียนการสอนตามปกติได้
+                                ผมจึงใช้เวลาว่างศึกษาการพัฒนาเว็บไซต์ด้วยตนเอง
+                                เริ่มจากการเรียนรู้ภาษา HTML, CSS และ JavaScript
+                                ผ่าน Youtube จนสามารถสร้าง Website Portfolio
+                                ได้สำเร็จ
+                                ประสบการณ์นี้ไม่เพียงแต่เสริมทักษะด้านการเขียนโปรแกรม
+                                แต่ยังทำให้ผมเห็นภาพรวมของโครงสร้างการทำงานของเว็บไซต์และความสำคัญของการวางแผนพัฒนาโครงการอย่างเป็นระบบ
+                                ความสนใจในการพัฒนาเว็บไซต์ยังนำไปสู่โอกาสในการทำโครงงานที่น่าสนใจหลายโครงการ
+                                เช่น การพัฒนาเว็บไซต์แปลง QRCODE และโครงงาน
+                                Trash Back
+                                เป็นระบบแลกเปลี่ยนขยะประเภทกระป๋องและขวดพลาสติกแบบอัตโนมัติเป็นต้น
+                                โครงการเหล่านี้ไม่เพียงช่วยเสริมทักษะการเขียนโปรแกรมแต่ยังทำให้ผมตระหนักถึงศักยภาพของเทคโนโลยีในการแก้ปัญหาสังคมได้อย่างเป็นรูปธรรม
+                                และยิ่งสร้างแรงบันดาลใจให้ผมมุ่งมั่นที่จะพัฒนานวัตกรรมใหม่ๆและพัฒนาสิ่งที่มีอยู่เดิมให้ทันสมัยยิ่งขึ้น
+                                อาทิ การออกแบบ UX/UI ของ Window13
+                                ที่มีประโยชน์ต่อสังคมและประเทศชาติ
+                                การพัฒนาตัวเองอย่างต่อเนื่องทำให้ผมได้รับโอกาสเข้าร่วมแข่งขัน
+                                Green Mech ในหัวข้อ R4M ระดับนานาชาติ
+                                ซึ่งประสบการณ์นี้ช่วยพัฒนาทักษะการคิดเชิงวิเคราะห์และการทำงานเป็นทีมต่อมาผมได้เข้าร่วมการแข่งขันโครงงาน
+                                Microbit ที่คณะวิทยาศาสตร์ สจล.
+                                ยังทำให้ผมได้เปิดโลกทัศน์และเห็นถึงผลงานต่างๆและศักยภาพของการนำเทคโนโลยีมาใช้ในสถาบันการศึกษานี้
                             </motion.div>
                             <div className="flex gap-3 min-h-[20rem] md:flex-row flex-col">
                                 <div className="flex-1">
@@ -324,7 +321,7 @@ function Home() {
                         </div>
                         <div className=" mt-10">
                             <div className="cards flex justify-around gap-y-10 flex-wrap">
-                                {cardData.map((items) => (
+                                {CardData.map((items) => (
                                     <motion.div
                                         initial={{ y: 40, opacity: 0 }}
                                         whileInView={{ y: 0, opacity: 1 }}
