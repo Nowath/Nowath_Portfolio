@@ -175,7 +175,7 @@ function Home() {
                                         whileHover={{ scale: 1.01 }}
                                         className="content text-lg bg-[rgba(255,255,255,0.27)] backdrop-blur-lg text-white transition-[background,color] hover:bg-[rgba(255,255,255,0.57)] hover:text-black  w-full rounded-xl p-4"
                                     >
-                                        <div className="flex gap-6">
+                                        <div className="flex  gap-6">
                                             <ul className="text-xl flex flex-col md:flex-row justify-evenly w-full">
                                                 <div className="flex flex-col gap-y-3 ">
                                                     <h1 className="text-2xl underline">
