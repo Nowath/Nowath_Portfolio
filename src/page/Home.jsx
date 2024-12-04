@@ -326,7 +326,7 @@ function Home() {
                                         whileHover={{ scale: 1.1 }}
                                         className="flex flex-col justify-between card w-80 h-96 bg-[#ffffff60] overflow-hidden backdrop-blur-lg rounded-xl"
                                     >
-                                        <div className=" h-[80%]">
+                                        <div className="h-[80%]">
                                             <img
                                                 className="h-2/5 w-full object-cover mb-3"
                                                 src={items.image}
