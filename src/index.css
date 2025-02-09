@@ -30,3 +30,6 @@ section {
 .content {
     margin-top: 24px;
 }
+.schools:hover > :not(:hover) {
+    @apply blur-lg;
+}
