@@ -31,8 +31,11 @@ import { SiArduino, SiVscodium, SiPostman } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 // import component
 import SocialContact from "../components/SocialContact";
+import dayjs from "dayjs";
 
 function Home() {
+    const Age = dayjs().diff(dayjs("2007-04-24"), "year");
+
     const [cardData, setCardData] = useState([
         {
             title: "Qrcode_Gen",
@@ -148,7 +151,7 @@ function Home() {
                                                     <b>Nickname:</b> Nano
                                                 </p>
                                                 <p>
-                                                    <b>Age:</b> 17
+                                                    <b>Age:</b> <span>{Age}</span>
                                                 </p>
                                                 <p>
                                                     <b>Blood Group:</b> B
