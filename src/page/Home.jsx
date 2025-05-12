@@ -4,6 +4,7 @@ import Profile from "../assets/Profile.jpg";
 import Background from "../assets/AnasAbdin.gif";
 import Anubarn from "../assets/anubarnsurin-Logo.jpg";
 import SWK from "../assets/SWK-Logo.svg";
+import Chula from "../assets/chula-logo-1.png"
 import QrImage from "../assets/card/Qrcode.png";
 import Bio from "../assets/card/Nano_card.png";
 import TrashBack from "../assets/card/trashback.png";
@@ -273,13 +274,13 @@ function Home() {
                         <div className="flex justify-start text-4xl">
                             <h1 className="header relative">Aducation</h1>
                         </div>
-                        <div className="content schools flex w-full gap-5 flex-wrap flex-col sm:flex-row">
+                        <div className="content schools flex w-full gap-5 flex-wrap ">
                             <motion.a
                                 initial={{ y: 40, opacity: 0 }}
                                 whileInView={{ y: 0, opacity: 1 }}
                                 href="https://www.anubarnsurin.ac.th/"
                                 target="_blank"
-                                className="flex justify-center items-center flex-col flex-1 py-4 rounded-xl transition-all duration-500 hover:shadow-pink-300 hover:shadow-2xl hover:bg-[rgba(255,255,255,0.27)] hover:backdrop-blur-lg"
+                                className="flex justify-center items-center px-20 flex-col flex-1 py-4 rounded-xl transition-all duration-500 hover:shadow-pink-300 hover:shadow-2xl hover:bg-[rgba(255,255,255,0.27)] hover:backdrop-blur-lg"
                             >
                                 <img
                                     className=" w-48 md:w-64 rounded-full"
@@ -287,14 +288,14 @@ function Home() {
                                     alt=""
                                 />
                                 <h1 className="text-2xl">Anubarnsurin</h1>
-                                <p className="text-lg">Primary school</p>
+                                <p className="text-xl">Primary school</p>
                             </motion.a>
                             <motion.a
                                 initial={{ y: 40, opacity: 0 }}
                                 whileInView={{ y: 0, opacity: 1 }}
                                 href="https://sura.ac.th/"
                                 target="_blank"
-                                className="flex justify-center items-center flex-col flex-1 py-4 rounded-xl transition-all duration-500 hover:shadow-green-700 hover:shadow-2xl hover:bg-[rgba(255,255,255,0.27)] hover:backdrop-blur-lg"
+                                className="flex justify-center items-center px-20 flex-col flex-1 py-4 rounded-xl transition-all duration-500 hover:shadow-green-700 hover:shadow-2xl hover:bg-[rgba(255,255,255,0.27)] hover:backdrop-blur-lg"
                             >
                                 <img
                                     className=" w-48 md:w-64 bg-white rounded-full"
@@ -302,22 +303,24 @@ function Home() {
                                     alt=""
                                 />
                                 <h1 className="text-2xl">Surawittayakarn</h1>
-                                <p className="text-lg">Middle school</p>
+                                <p className="text-xl text-center">Middle school - High school</p>
+                                <p className="text-center">Science, Math, English and Technology (SMET)</p>
                             </motion.a>
                             <motion.a
                                 initial={{ y: 40, opacity: 0 }}
                                 whileInView={{ y: 0, opacity: 1 }}
-                                href="https://sura.ac.th/"
+                                href="https://www.chula.ac.th/"
                                 target="_blank"
-                                className="flex justify-center items-center flex-col flex-1 py-4 rounded-xl transition-all duration-500 hover:shadow-yellow-300 hover:shadow-2xl hover:bg-[rgba(255,255,255,0.27)] hover:backdrop-blur-lg"
+                                className="flex justify-center items-center px-20 flex-col flex-1 py-4 rounded-xl transition-all duration-500 hover:shadow-yellow-300 hover:shadow-2xl hover:bg-[rgba(255,255,255,0.27)] hover:backdrop-blur-lg"
                             >
                                 <img
                                     className=" w-48 md:w-64 bg-white rounded-full"
-                                    src={SWK}
+                                    src={Chula}
                                     alt=""
                                 />
-                                <h1 className="text-2xl">Surawittayakarn</h1>
-                                <p className="text-lg">High school</p>
+                                <h1 className="text-2xl text-center">Chulalongkorn University</h1>
+                                <p className="text-xl">Faculty of Science</p>
+                                <p>Computer Science</p>
                             </motion.a>
                         </div>
                     </section>
@@ -389,7 +392,7 @@ function Home() {
                         <div className="flex justify-start text-4xl">
                             <h1 className="header relative">Contact</h1>
                         </div>
-                        <div className="mt-10 flex flex-wrap gap-y-10 justify-around w-full">
+                        <div className="mt-10 flex flex-wrap gap-5 justify-around w-full">
                             <SocialContact />
                         </div>
                     </section>
