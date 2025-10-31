@@ -166,10 +166,9 @@ function Home() {
                                                     <b>Nationality:</b> Thai
                                                 </p>
                                                 <p>
-                                                    <b>Address:</b> 70/1-3
-                                                    ซอยเทศบำรุง ถนนจิตรบำรุง
-                                                    อำเภอเมือง ตำบลในเมือง
-                                                    จังหวัดสุรินทร์ 32000
+                                                    Lorem ipsum dolor sit amet, consectetur
+                                                    adipisicing elit. Perferendis odio officia
+                                                    architecto sed quaerat nostrum mollitia dolorum
                                                 </p>
                                             </div>
                                         </div>
